@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A multimedia feature story about Jewish life at Cal Poly." />
+  <title>Jewish at Cal Poly</title>
+
+  <!-- Browser chrome color (mobile) -->
+  <meta name="theme-color" content="#f5eee9" />
+
+  <!-- Open Graph — update og:image / og:url to absolute URLs when deployed -->
+  <meta property="og:type"        content="article" />
+  <meta property="og:title"       content="Jewish at Cal Poly" />
+  <meta property="og:description" content="Identity, community and belonging on campus through Chabad, student voices and everyday moments. By Kiana Ginsberg." />
+  <meta property="og:image"       content="img/hero.jpg" />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Jewish at Cal Poly" />
+  <meta name="twitter:description" content="Identity, community and belonging on campus through Chabad, student voices and everyday moments. By Kiana Ginsberg." />
+  <meta name="twitter:image"       content="img/hero.jpg" />
+
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.44.0/tabler-icons.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="progress-bar"></div>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Jewish at Cal Poly home">
+        <img src="img/logo.png" alt="Jewish at Cal Poly logo" />
+      </a>
+
+      <button type="button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false" onclick="toggleNav()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#story">Story</a></li>
+        <li><a href="#kotel">Kotel</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#infographic">Infographic</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#photos">Photos</a></li>
+        <li><a href="#credits">Credits</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Home ── -->
+  <div id="home" class="page">
+    <header class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+
+      <!-- Star of David doodles in hero corners -->
+      <svg class="j-doodle--scatter" aria-hidden="true" style="top:9%;right:7%;width:90px;opacity:0.065;color:#3c2832;transform:rotate(12deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+      <svg class="j-doodle--scatter" aria-hidden="true" style="bottom:18%;left:5%;width:60px;opacity:0.055;color:#3c2832;transform:rotate(-10deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+
+      <div class="hero-content">
+        <h1>Jewish life at Cal Poly</h1>
+        <p class="deck">
+          Identity, community and belonging on campus through Chabad, student voices and everyday moments.
+        </p>
+        <p class="byline"><strong>By Kiana Ginsberg | May 2026</strong></p>
+        <a href="#story" class="scroll-link">Explore the story ↓</a>
+      </div>
+    </header>
+  </div>
+
+  <!-- ── Story ── -->
+  <div id="story" class="page">
+
+    <!-- Dreidel (top-right) and Hamsa (bottom-left) scattered in story margins -->
+    <svg class="j-doodle--scatter" aria-hidden="true" style="top:34%;right:3%;width:42px;opacity:0.1;transform:rotate(14deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 75" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="25" y1="2" x2="25" y2="12"/><rect x="8" y="12" width="34" height="34" rx="6"/><line x1="8" y1="46" x2="25" y2="72"/><line x1="42" y1="46" x2="25" y2="72"/></svg>
+    <svg class="j-doodle--scatter" aria-hidden="true" style="bottom:26%;left:3%;width:52px;opacity:0.1;transform:rotate(-8deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8,52 C6,40 6,28 9,20 C12,14 18,13 21,18 L21,46"/><path d="M21,46 L21,14 C21,10 27,10 27,14 L27,46"/><path d="M27,46 L27,9 C27,5 33,5 33,9 L33,46"/><path d="M33,46 L33,14 C33,10 39,10 39,14 L39,46"/><path d="M52,52 C54,40 54,28 51,20 C48,14 42,13 39,18 L39,46"/><path d="M8,52 C8,64 16,74 30,76 C44,74 52,64 52,52 Z"/><ellipse cx="30" cy="60" rx="7" ry="5"/><circle cx="30" cy="60" r="2.5" fill="currentColor" stroke="none"/></svg>
+
+    <section class="section story">
+
+      <!-- Menorah divider above heading -->
+      <div class="doodle-row" aria-hidden="true">
+        <svg style="width:22px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+        <svg style="width:90px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="38" y1="74" x2="82" y2="74"/><line x1="60" y1="74" x2="60" y2="45"/><path d="M16,30 C16,45 60,45 60,45"/><path d="M30,30 C30,42 60,44 60,45"/><path d="M44,30 C44,40 60,43 60,45"/><line x1="60" y1="30" x2="60" y2="45"/><path d="M76,30 C76,40 60,43 60,45"/><path d="M90,30 C90,42 60,44 60,45"/><path d="M104,30 C104,45 60,45 60,45"/><path d="M60,30 C62,23 60,16 58,21 C56,25 58,30 60,30"/><path d="M16,30 C18,23 16,16 14,21 C12,25 14,30 16,30"/><path d="M30,30 C32,23 30,16 28,21 C26,25 28,30 30,30"/><path d="M44,30 C46,23 44,16 42,21 C40,25 42,30 44,30"/><path d="M76,30 C78,23 76,16 74,21 C72,25 74,30 76,30"/><path d="M90,30 C92,23 90,16 88,21 C86,25 88,30 90,30"/><path d="M104,30 C106,23 104,16 102,21 C100,25 102,30 104,30"/></svg>
+        <svg style="width:22px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+      </div>
+
+      <div class="section-heading">
+        <h2>Finding a home away from home</h2>
+      </div>
+
+      <div class="story-content">
+        <article class="story-main">
+          <p class="dropcap"><span class="drop-r">R</span>achel Newman didn't plan her first visit to Chabad.</p>
+
+          <p>
+            During a trip to Cal Poly before enrolling, she and her parents walked up to the house and knocked on the door unannounced. No appointment and no reason to expect much.
+          </p>
+
+          <p>
+            "The rabbi and his wife were so welcoming and supportive," Newman said. "They invited us in and sat and talked with my parents and me for 20 or 30 minutes about life and school. I think if I hadn't had that conversation, I don't know if I would be at Cal Poly."
+          </p>
+
+          <p>
+            It's a small moment, the kind that's easy to overlook. But sometimes the places that end up meaning the most to us begin exactly like that, quietly, before we even know we needed them.
+          </p>
+
+          <p>
+            For many Jewish students, a sense of belonging on campus doesn't always come that easily. At Cal Poly, Chabad — also known as the Rohr Center for Jewish Life — aims to provide exactly that. The organization describes its mission as creating "an open door environment" for Jewish students of all backgrounds, a space that is non-judgmental, accepting, and centered on personal connection.
+          </p>
+
+          <p>
+            Through crowded Shabbat dinners, holiday gatherings and everyday conversations, that mission is brought to life. Students gather over homemade meals, celebrate traditions and build friendships that extend beyond campus life.
+          </p>
+
+          <div class="parallax-story" style="background-image: url('img/story2.jpg');" role="img" aria-label="Rabbi Chaim Hillel and his wife Mikki Hillel together right before Shabbat begins"></div>
+
+          <p>
+            In recent years, the need for spaces like Chabad has only grown. Following the October 7, 2023, Hamas attack on Israel and the war that followed, antisemitic incidents have risen across the United States, including on college campuses. According to the Anti-Defamation League, there were 9,354 incidents nationwide in 2024 — the highest number ever recorded — including 1,694 on college campuses.
+          </p>
+
+          <blockquote>
+            "I had a professor hit the Nazi salute as a joke in class," Taylor said.
+          </blockquote>
+
+          <p>
+            At Cal Poly, those national trends shape students' experiences in more personal ways, sometimes showing up in the places you'd least expect them. And even when antisemitism isn't directly experienced, its presence is still felt.
+          </p>
+
+          <p>
+            "There's always going to be antisemitism," Newman said. "You need groups and spaces that are going to stand up for you and make sure that if it does happen, it's properly addressed."
+          </p>
+
+          <p>
+            There's something particular about finding a place where you don't have to explain yourself. Where the context of who you are arrives before you do, carried in shared history, shared memory, shared identity. That's what students say Chabad offers, not just a community, but the feeling of being known.
+          </p>
+
+          <p>
+            Jewish identity is often defined by three core ideas: עַם (am), a people; אֶרֶץ (eretz), a land; and התורה (hatorah), a religion. It's a combination that can be difficult to navigate in the diaspora, especially on a campus where Jews make up a small minority. The complexity of that identity can make it harder to feel fully connected without a space of your own.
+          </p>
+
+          <p>
+            "Chabad plays a really big role in my life," Newman said. "I'm there at least once a week, probably more. I've met some of my best friends in college. The events they put on are very safe and welcoming."
+          </p>
+
+          <div class="parallax-story" style="background-image: url('img/story3.jpg'); background-position: center 20%;" role="img" aria-label="Four students hanging out together at a Chabad event"></div>
+
+          <p>
+            Every Friday, that sense of belonging is rebuilt from scratch, groceries carried in, meals prepared, the table set again. It's a routine that asks nothing of you except that you show up.
+          </p>
+
+          <div class="parallax-story" style="background-image: url('img/story1.jpg');" role="img" aria-label="Members of the Chabad leadership council in matching sweatshirts at their end-of-year bonfire"></div>
+
+          <p>
+            "Honestly, Chabad is the best thing that has happened to me here," Taylor said.
+          </p>
+
+          <p class="story-closing">Some places you find.<br>Some places find you.<br>For a lot of students at Cal Poly, Chabad has been both.</p>
+        </article>
+
+        <div class="flip-card-section">
+          <div class="flip-card-container">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="flip-card-label">What Chabad offers</p>
+                  <p>A welcoming campus home for Jewish students.</p>
+                </div>
+                <div class="flip-card-back">
+                  <p>Shabbat dinners, holiday gatherings, conversation and support for students of all backgrounds.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="flip-card-label">Why it matters</p>
+                  <p>Belonging can be hard to find in college.</p>
+                </div>
+                <div class="flip-card-back">
+                  <p>For many students, Chabad offers a place to feel understood during a time of rising antisemitism.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="flip-card-label">Core idea</p>
+                  <p>Community becomes a place.</p>
+                </div>
+                <div class="flip-card-back">
+                  <p>At Cal Poly, students describe community as something they can return to whenever they need it.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <p class="flip-card-label">Weekly rhythm</p>
+                  <p>Friday starts early.</p>
+                </div>
+                <div class="flip-card-back">
+                  <p>Shopping, cooking and preparing meals all build toward Shabbat dinner with students and families.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── Kotel ── -->
+  <div id="kotel" class="page">
+
+    <!-- Stars of David floating near the Kotel -->
+    <svg class="j-doodle--scatter j-doodle--float" aria-hidden="true" style="top:8%;left:6%;width:34px;opacity:0.13;--doodle-rot:-14deg;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+    <svg class="j-doodle--scatter j-doodle--float" aria-hidden="true" style="top:6%;right:7%;width:26px;opacity:0.11;--doodle-rot:24deg;animation-delay:1.2s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+    <svg class="j-doodle--scatter j-doodle--float" aria-hidden="true" style="bottom:12%;right:5%;width:30px;opacity:0.1;--doodle-rot:8deg;animation-delay:2.5s;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+
+    <section class="section kotel-section">
+      <div class="section-heading">
+        <h2>Leave a note at the Kotel</h2>
+      </div>
+      <p class="section-intro">
+        The Western Wall — known as the Kotel — is one of Judaism's holiest sites. Visitors tuck written prayers and wishes into its ancient stones. Add yours below.
+      </p>
+      <div class="kotel-wrapper">
+        <div class="kotel-wall" id="kotelWall"></div>
+        <div class="kotel-form">
+          <textarea id="kotelInput" maxlength="120" placeholder="Write your prayer or message…" rows="3"></textarea>
+          <span id="kotelCharCount" class="kotel-char-count">0 / 120</span>
+          <div class="kotel-form-row">
+            <button id="kotelSubmit" type="button">Place at the Wall</button>
+            <button id="kotelClear" type="button">Clear all notes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── Audio ── -->
+  <div id="audio" class="page">
+    <section class="section">
+
+      <!-- Chai (חי) doodle above audio heading -->
+      <div class="doodle-row" aria-hidden="true">
+        <svg style="width:52px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70 50" fill="currentColor"><text x="35" y="44" text-anchor="middle" font-size="40" font-family="Playfair Display, serif" stroke="none">חי</text></svg>
+      </div>
+
+      <div class="section-heading">
+        <h2>How has Chabad impacted your college experience?</h2>
+      </div>
+      <p class="section-intro">
+        We asked three Cal Poly students the same question. Click a portrait to hear their answer.
+      </p>
+
+      <div class="audio-board">
+
+        <div class="audio-card-wrap">
+          <button class="audio-speaker" onclick="playAudio('audio1')" aria-label="Play audio for Rachel Newman">
+            <div class="rollover-wrap">
+              <img src="img/rollover/isabel.jpg" class="card-still" alt="Rachel Newman" loading="lazy" />
+              <video src="gif/rachel.mov" class="audio-gif" autoplay loop muted playsinline></video>
+            </div>
+          </button>
+          <audio id="audio1" src="audio/1.mp3" preload="none"></audio>
+          <div class="audio-info">
+            <div class="audio-info-name">Rachel Newman</div>
+            <div class="audio-info-details">First Year &middot; Communications</div>
+          </div>
+        </div>
+
+        <div class="audio-card-wrap">
+          <button class="audio-speaker" onclick="playAudio('audio2')" aria-label="Play audio for Isabel Rochel">
+            <div class="rollover-wrap">
+              <img src="img/rollover/hila.jpg" class="card-still" alt="Isabel Rochel" loading="lazy" />
+              <video src="gif/isabel.mov" class="audio-gif" autoplay loop muted playsinline></video>
+            </div>
+          </button>
+          <audio id="audio2" src="audio/2.mp3" preload="none"></audio>
+          <div class="audio-info">
+            <div class="audio-info-name">Isabel Rochel</div>
+            <div class="audio-info-details">First Year &middot; Agricultural Business</div>
+          </div>
+        </div>
+
+        <div class="audio-card-wrap">
+          <button class="audio-speaker" onclick="playAudio('audio3')" aria-label="Play audio for Hila Buber">
+            <div class="rollover-wrap">
+              <img src="img/rollover/rachel.jpg" class="card-still" alt="Hila Buber" loading="lazy" />
+              <video src="gif/hila.mov" class="audio-gif" autoplay loop muted playsinline></video>
+            </div>
+          </button>
+          <audio id="audio3" src="audio/3.mp3" preload="none"></audio>
+          <div class="audio-info">
+            <div class="audio-info-name">Hila Buber</div>
+            <div class="audio-info-details">First Year &middot; Psychology</div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="audio-instructions">Click a portrait to play · Click again to pause</p>
+    </section>
+  </div>
+
+  <!-- ── Infographic ── -->
+  <div id="infographic" class="page section-band">
+    <section class="section infographic-section">
+
+      <div class="infographic">
+
+        <div class="header">
+          <div class="accent-bar"></div>
+          <h1>Jewish Life at Cal Poly</h1>
+          <p>Community, faith, and belonging on campus</p>
+        </div>
+
+        <p class="section-label">By the numbers</p>
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-num">1,500</div>
+            <div class="stat-label">Jewish students at Cal Poly</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">6.9%</div>
+            <div class="stat-label">Of the total student population</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">100+</div>
+            <div class="stat-label">Students at monthly Hillel Shabbat dinners</div>
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="section-label">Campus organizations</p>
+        <div class="org-grid">
+          <div class="org-card">
+            <div class="org-icon"><i class="ti ti-building-community"></i></div>
+            <p class="org-name">SLO Hillel</p>
+            <p class="org-desc">The central hub for Jewish campus life. Hosts monthly Shabbat dinners, Israel engagement, and the SLO Bayit house for Jewish social programs.</p>
+          </div>
+          <div class="org-card">
+            <div class="org-icon"><i class="ti ti-star"></i></div>
+            <p class="org-name">Chabad of SLO &amp; Cal Poly</p>
+            <p class="org-desc">The Rohr Center for Jewish Life. Welcomes students of all backgrounds for Shabbat, Jewish learning, and community regardless of affiliation.</p>
+          </div>
+          <div class="org-card">
+            <div class="org-icon"><i class="ti ti-users"></i></div>
+            <p class="org-name">Jewish Greek Life (AEPI)</p>
+            <p class="org-desc">A Jewish fraternity on campus dedicated to brotherhood, Tzedakah, and support for the Jewish community.</p>
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="section-label">What's available on campus</p>
+        <div class="tag-row">
+          <span class="tag tag-blue"><i class="ti ti-tools-kitchen-2"></i> Kosher food truck on campus</span>
+          <span class="tag tag-teal"><i class="ti ti-moon"></i> Weekly Shabbat services</span>
+          <span class="tag tag-blue"><i class="ti ti-home"></i> SLO Bayit off-campus house</span>
+          <span class="tag tag-amber"><i class="ti ti-book"></i> Jewish history &amp; culture classes</span>
+        </div>
+
+        <hr />
+
+        <p class="section-label">Friday night Shabbat — a weekly ritual</p>
+        <div class="shabbat-grid">
+          <div class="shabbat-step">
+            <i class="ti ti-sun"></i>
+            <span>Sundown Friday — Shabbat begins</span>
+          </div>
+          <div class="shabbat-step">
+            <i class="ti ti-tools-kitchen-2"></i>
+            <span>Shabbat dinner at Hillel or Chabad</span>
+          </div>
+          <div class="shabbat-step">
+            <i class="ti ti-building-church"></i>
+            <span>Saturday morning services</span>
+          </div>
+          <div class="shabbat-step">
+            <i class="ti ti-moon-stars"></i>
+            <span>Saturday nightfall — Shabbat ends</span>
+          </div>
+        </div>
+
+        <p class="sources">
+          Sources:
+          <a href="https://www.hillel.org/college/california-polytechnic-state-university-san-luis-obispo/" target="_blank">Hillel International</a> ·
+          <a href="https://www.adl.org/campus-antisemitism-report-card/california-polytechnic-state-university-san-luis-obispo" target="_blank">ADL Campus Report</a> ·
+          <a href="https://www.slohillel.org" target="_blank">SLO Hillel</a>
+        </p>
+
+      </div>
+
+    </section>
+  </div>
+
+  <!-- ── Video ── -->
+  <div id="video" class="page">
+    <section class="section alt-band">
+      <div class="section-heading">
+
+        <h2>A Saturday Across the Street</h2>
+      </div>
+
+      <div class="video-wrapper">
+        <video controls poster="img/poster.jpg" preload="none">
+          <source src="video.mp4" type="video/mp4" />
+          <track kind="captions" src="captions/video-captions.vtt" srclang="en" label="English" default />
+          Your browser does not support the video tag.
+        </video>
+        <p class="caption">Benjamin and Max are Orthodox Jews at Cal Poly who keep Shabbat every weekend. One Saturday afternoon, they decided to stop by a fraternity day party — button-ups, kippot, and all.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- ── Photos ── -->
+  <div id="photos" class="page">
+
+    <!-- Star of David scattered in photos section -->
+    <svg class="j-doodle--scatter" aria-hidden="true" style="top:7%;right:4%;width:44px;opacity:0.11;transform:rotate(20deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+    <svg class="j-doodle--scatter" aria-hidden="true" style="bottom:10%;left:4%;width:32px;opacity:0.09;transform:rotate(-16deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="30,5 56,50 4,50"/><polygon points="30,55 4,10 56,10"/></svg>
+
+    <section class="section alt-band">
+      <div class="section-heading">
+        <h2>Scenes from Jewish life on campus</h2>
+      </div>
+
+      <p class="section-intro">
+        Scroll through the photo gallery to see the rituals, people and moments behind the story.
+      </p>
+
+      <div class="slideshow" role="region" aria-label="Photo essay slideshow">
+        <button class="slide-btn slide-prev" onclick="slidePrev()" aria-label="Previous photo">✡</button>
+
+        <div class="slide-track">
+          <figure class="slide active">
+            <img src="img/photo1.jpg" alt="Rabbi Chaim Hillel walking through a grocery store aisle while shopping for Shabbat dinner" loading="lazy" />
+            <figcaption>Rabbi Chaim Hillel walks down a grocery aisle, beginning the weekly process of gathering food for Chabad at Cal Poly's Shabbat dinner, an effort that feeds and brings together around 100 students each week.</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="img/photo2.jpg" alt="Rabbi Chaim Hillel selecting produce in a grocery store" loading="lazy" />
+            <figcaption>Rabbi Chaim Hillel weighs his options in the produce aisle, choosing vegetables that will become part of a home-cooked Shabbat dinner, scaling a traditional meal to serve a crowd of Cal Poly students.</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="img/photo3.jpg" alt="Volunteers preparing pasta and vegetables in the Chabad kitchen" loading="lazy" />
+            <figcaption>Volunteers prepare trays of pasta and seasoned vegetables in the Chabad kitchen ahead of Shabbat dinner, assembling dishes that will be served to students and community members later that evening.</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="img/photo4.jpg" alt="Students and community members shaping dough in the Chabad kitchen" loading="lazy" />
+            <figcaption>Students and community members gather in the kitchen at Chabad at Cal Poly, shaping dough as Friday preparations shift from shopping to cooking for Shabbat dinner.</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="img/photo5.jpg" alt="Braided challah arranged on a counter before Shabbat dinner" loading="lazy" />
+            <figcaption>Braided challah lines the counter as volunteers prepare multiple loaves for the week's Shabbat dinner at Chabad at Cal Poly.</figcaption>
+          </figure>
+
+          <figure class="slide">
+            <img src="img/photo6.jpg" alt="Mikki Hillel lighting Shabbat candles with her two children at home" loading="lazy" />
+            <figcaption>Mikki Hillel, wife of Rabbi Chaim Hillel, lights Shabbat candles with her two children at home, marking the beginning of Shabbat before guests arrive for a Chabad-hosted dinner.</figcaption>
+          </figure>
+        </div>
+
+        <button class="slide-btn slide-next" onclick="slideNext()" aria-label="Next photo">✡</button>
+      </div>
+      <p class="slide-counter" aria-live="polite">1 / 6</p>
+    </section>
+  </div>
+
+  <!-- ── Credits ── -->
+  <div id="credits" class="page">
+    <div class="about-me">
+
+      <!-- Small menorah doodle in credits -->
+      <svg class="j-doodle--scatter" aria-hidden="true" style="top:5%;right:5%;width:62px;opacity:0.1;transform:rotate(5deg);" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="38" y1="74" x2="82" y2="74"/><line x1="60" y1="74" x2="60" y2="45"/><path d="M16,30 C16,45 60,45 60,45"/><path d="M30,30 C30,42 60,44 60,45"/><path d="M44,30 C44,40 60,43 60,45"/><line x1="60" y1="30" x2="60" y2="45"/><path d="M76,30 C76,40 60,43 60,45"/><path d="M90,30 C90,42 60,44 60,45"/><path d="M104,30 C104,45 60,45 60,45"/><path d="M60,30 C62,23 60,16 58,21 C56,25 58,30 60,30"/><path d="M16,30 C18,23 16,16 14,21 C12,25 14,30 16,30"/><path d="M30,30 C32,23 30,16 28,21 C26,25 28,30 30,30"/><path d="M44,30 C46,23 44,16 42,21 C40,25 42,30 44,30"/><path d="M76,30 C78,23 76,16 74,21 C72,25 74,30 76,30"/><path d="M90,30 C92,23 90,16 88,21 C86,25 88,30 90,30"/><path d="M104,30 C106,23 104,16 102,21 C100,25 102,30 104,30"/></svg>
+
+      <!-- Circle 1: Bio -->
+      <div class="about-circle about-circle--text">
+        <p class="about-title">On Jewish Life at Cal Poly</p>
+        <p class="about-byline">By Kiana Ginsberg</p>
+        <p class="about-date">May 2026</p>
+      </div>
+
+      <!-- Circle 2: Photo -->
+      <div class="about-circle about-circle--photo">
+        <img src="img/headshot.jpg" alt="Kiana Ginsberg" class="about-headshot" loading="lazy" />
+      </div>
+
+      <!-- Circle 3: Contact -->
+      <div class="about-circle about-circle--text">
+        <div class="about-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.09 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16l.92-.08z"/></svg>
+          <span>310-948-4906</span>
+        </div>
+        <div class="about-contact-item">
+          <span class="about-contact-email"><a href="mailto:kianaginsberg@icloud.com">kianaginsberg@icloud.com</a></span>
+        </div>
+        <div class="about-contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          <span>@kianaginsberg</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p><strong>Kiana Ginsberg</strong></p>
+    <p><a href="mailto:kianaginsberg@icloud.com">kianaginsberg@icloud.com</a> &nbsp;&middot;&nbsp; 310-948-4906</p>
+    <p>&copy; 2026 Kiana Ginsberg. All rights reserved.</p>
+  </footer>
+
+  <button id="back-to-top" title="Back to home">&#8593; Home</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
